@@ -1,5 +1,5 @@
+"""VIEWS OF THE PROJECT"""
 from django.shortcuts import render
-
 from things.forms import ThingForm
 
 def home(request):
