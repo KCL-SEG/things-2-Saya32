@@ -6,10 +6,15 @@
   <h1>
     Things
   </h1>
-  <form method="POST" action="">
+  <form method="post" action="">
     {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Submit">
+    <label for="name">Name:</label>
+    <input type="text" name="name" maxlength="35" required>
+    <label for="description">Description:</label>
+    <textarea name="description" maxlength="120" required></textarea>
+    <label for="quantity">Quantity:</label>
+    <input type="number" name="quantity" min="0" max="50" required>
+    <button type="submit">Submit</button>
 </form>
 </body>
 </html>
